@@ -17,11 +17,12 @@ html {
 }
 
 .clearfix {zoom: 1}
-.clearfix {
+.clearfix::after {
     content: '.';
     clear: both;
     display: block;
     height: 0;
+    visibility: hidden;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -142,6 +143,25 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+/* LINKS */
+/* ------------------------------------------------------------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* BUTTONS */
 /* ------------------------------------------------------------------------------------------------- */
@@ -191,6 +211,18 @@ header {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align:center;
+    color:#e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* MEALS IMAGE GRID */
 /* ------------------------------------------------------------------------------------------------- */
@@ -230,6 +262,9 @@ header {
 /* HOW IT WORKS */
 /* ------------------------------------------------------------------------------------------------- */
 
+.section-steps {
+    background-color: #f4f4f4;
+}
 .steps-box:first-child { /* Two columns in this row. The first one is the image, the second contains the instructions */
     text-align: right; /* Right-align inline and inline-block elements (img in this case) */
     padding-right: 3%;
@@ -253,8 +288,8 @@ header {
     display: inline-block; /* Ensures number is displayed alongside text */
     float: left; /* Positions number to left of text */
     border-radius: 50%;
-    height: 55px;
-    width: 55px;
+    height: 54px;
+    width: 54px;
     text-align: center;
     padding: 5px;
     font-size: 150%;
@@ -263,9 +298,30 @@ header {
 .works-step:last-of-type {
     margin-bottom: 80px;
 }
-
+.works-step:first-of-type {
+    margin-top: 50px;
+}
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border:0;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------------------------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
