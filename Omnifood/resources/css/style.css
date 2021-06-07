@@ -167,7 +167,8 @@ a:active {
 /* ------------------------------------------------------------------------------------------------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -177,7 +178,8 @@ a:active {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     color: white;
     margin-right: 16px;
@@ -187,7 +189,9 @@ a:active {
     color: #e67e22;
 }
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
 }
 .btn-full:hover,
@@ -325,3 +329,32 @@ a:active {
 .city-feature {
     margin-bottom: 5px;
 }
+
+/* ------------------------------------------------------------------------------------------------- */
+/* CONTACT FORM */
+/* ------------------------------------------------------------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto; /* Centre form within parent */
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
