@@ -142,6 +142,10 @@ header {
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
+    -webkit-transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -ms-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
 }
 .main-nav li a:hover,
 .main-nav li a:active {
@@ -159,6 +163,10 @@ a:visited {
     border-bottom: 1px solid #e67e22;
     padding-bottom: 1px;
     transition: border-bottom 0.2s, color 0.2s;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    -moz-transition: border-bottom 0.2s, color 0.2s;
+    -ms-transition: border-bottom 0.2s, color 0.2s;
+    -o-transition: border-bottom 0.2s, color 0.2s;
 }
 a:hover,
 a:active {
@@ -180,6 +188,10 @@ input[type=submit] {
     border-radius: 200px;
     border: 1px solid #e67e22;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
 .btn-full:visited,
@@ -258,12 +270,21 @@ input[type=submit]:active {
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15); /* Scale image to 115% */
-    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1.15);
+    /*Scaleimageto115%*/transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
 }
 .meal-photo img:hover {
-    opacity: 1; /* Normal opacity */
-    transform: scale(1.03); /* Set to normal(ish) size on hover */
+    opacity: 1;
+    /*Normalopacity*/transform: scale(1.03);
+     /* Set to normal(ish) size on hover */:;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -402,6 +423,10 @@ footer {
     border: 0;
     color: #888;
     transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
 }
 
 
@@ -421,6 +446,10 @@ footer {
 .ion-social-instagram {
     color: #888;
     transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
